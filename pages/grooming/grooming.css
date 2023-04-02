@@ -1,0 +1,482 @@
+
+#blockForSlider{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#slidewrapper{ 
+    width: 100%;
+    height: 100%;
+ 
+}
+.title__forSlider{
+    width: 50%;
+    text-align:left;
+    position: absolute;
+    top: 550px;
+    left: 16px;
+    background: transparent;
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+}
+.slide_img {
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out;
+}
+.price_headers p{
+    padding: 1rem;
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+.service__principles li{
+    list-style-type: none;
+    margin: 2rem 0;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+.service__principles li img{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 1rem;
+
+}
+
+
+.benefits_block{
+    width: 100%;
+    height:300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: sandybrown;
+    margin: 5rem 0;
+}
+.benefits__wrapp{
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    background: sandybrown;
+    margin: 0 1rem;
+
+}
+.benefits__textBlock{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px; 
+    background:  sandybrown;
+}
+.benefits__textBlock p{
+    background:   sandybrown;
+}
+.benefit_bold{
+    font-weight: bold;
+}
+.benefit__iconDiv {
+    background:  sandybrown;
+}
+.benefit__iconDiv img{
+    width: 3rem;
+    height:3rem;
+    border-radius: 50%;
+    background-color: #ffc796;
+    text-align: center;
+    color: white;
+    padding: 5px; 
+}
+ h3{
+    padding-left: 1rem;
+    margin-top: 3rem;
+    color: sandybrown;
+}
+
+
+#dogsTable{
+    margin:1rem auto ;
+    width: 60%;
+    height: 600px;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 1px solid black;
+    text-align:center;
+  
+   
+}
+#dogsTable thead{
+    padding-bottom: 1rem;
+    height: 3rem;
+
+}
+#dogsTable th{
+    background:sandybrown;
+    color: white;
+}
+#catsTable{
+
+    margin:1rem auto;
+    margin-top: 3rem;
+    width: 60%;
+    height: 250px;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 1px solid black;
+    text-align:center;
+   
+}
+#catsTable thead{
+    padding-bottom: 1rem;
+    height: 3rem;
+    
+
+}
+#catsTable th{
+    background:sandybrown;
+    color: white;
+}
+.downloadPrice{
+    margin: 1rem auto;
+    width: 60%;
+    display: flex;
+    justify-content:flex-end;
+}
+.downloadPriceLink{
+    width:11rem;
+    height: 2.5rem;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    text-decoration: none;
+    text-align: center;
+    padding-top:10px;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+    
+}
+.downloadPriceLink:first-child{
+    margin-right: 1rem;
+}
+ .downloadPriceLink:hover{
+    box-shadow: 0 0 50px 0 #3498db inset, 0 0 10px 3px #3498db;
+}
+.title_commentsWrap{
+    width: 500px;
+    height: 150px;
+    background: url(img/Union.svg) no-repeat;
+    background-size: cover;
+    margin: 80px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_commentsWrap p{
+  background: transparent;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+#comments{
+    width:60%;
+    height: auto;
+    margin: 2rem auto;
+    font-size: 1rem;
+}
+#comments div{
+    width:100%;
+    height: auto;
+    margin: 2rem auto;
+    font-size: 1rem;
+  
+}
+#comments p{
+    font-size: 1rem;
+    word-wrap:break-word;
+}
+#comments p, h5{
+    margin:7px 0;
+}
+#comments p:last-child{
+    font-size: 1rem;
+}
+#addComment{
+    width:60%;
+    min-height: 300px;
+    margin: 2rem auto;
+    font-size: 1rem;
+    
+}
+#addComment form{
+    width:100%;
+    min-height:100%;
+    display: flex;
+    flex-direction: column;
+}
+#name, #comment{
+ outline:none;
+}
+#comment{
+ outline: none;
+ margin-top: 10px;
+}
+
+#addComment form label:first-child{
+    margin-bottom:10px ;
+}
+#addComment button{
+    margin-top: 10px;
+    padding: 10px 0;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
+#addComment button:hover{
+    box-shadow: 0 0 50px 0 #3498db inset, 0 0 10px 3px #3498db;
+}
+.outline{
+    border-color: red;
+}
+
+.contactBlock{
+    width:60%;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.writeToUs{
+    width: 60%;
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    text-align: center;
+    color: black;
+}
+.writeToUs p{
+    margin-bottom: 1rem;
+}
+.link_contact{
+    text-decoration: none;
+    color: #3498db;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px; 
+    cursor: pointer;
+}
+
+.link_contact:hover{
+    color:darkorange;
+    border-bottom: 2px solid darkorange;
+}
+
+.dogImgWrapp{
+    width: 35%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.dogImgWrapp img{
+    width: 100%;
+    height: 100%;
+}
+
+  
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .downloadPrice{
+        margin: 1rem auto;
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #blockForSlider{
+        height: 600px;
+    }
+    .title__forSlider{
+        width: 50%;
+        text-align:start;
+        top: 550px;
+        font-size: 2rem;
+    }
+ 
+    .downloadPrice{
+        margin: 1rem auto;
+        width: 60%;
+        display: flex;
+        justify-content:center;
+    }
+    
+
+}
+
+
+
+
+@media (min-width: 300px) and  (max-width: 767px) {
+    #blockForSlider{
+        height: 350px;
+    }
+
+    .title__forSlider{
+        width: 50%;
+        text-align:start;
+        top: 370px;
+        font-size: 1rem;
+    }
+
+    .service__principles li{
+        margin: 1.5rem 0;
+        padding: .3rem 1rem;
+
+    }
+    
+    
+    .benefits_block{
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem 0;
+    }
+    .benefits__wrapp{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    
+    }
+    .benefit__iconDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .benefits__textBlock{
+        width:100%;
+        margin-left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background:  sandybrown;
+   
+    }
+    .benefits__textBlock p{
+        padding: 10px 0;
+        text-align: center;
+        width:100%;
+    }
+    .price_headers p{
+        text-align: center;
+    }
+
+    h3{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    
+    #dogsTable{
+        width: 80%;
+    }
+    #dogsTable thead{
+        padding-bottom: 1rem;
+        height: 4rem;
+    }
+
+    #catsTable{
+        width: 80%;
+        height: 250px;
+       
+    }
+    #catsTable thead{
+        padding-bottom: 1rem;
+        height: 4rem;
+        
+    
+    }
+
+    .downloadPrice{
+        margin: 1rem auto;
+        width: 70%;
+        justify-content:center;
+    }
+    .downloadPriceLink{
+        width:11rem;
+        height:3rem;
+        padding-top:5px;
+        
+    }
+  
+    .title_commentsWrap{
+        width: 250px;
+        height: 150px;
+        background-color: sandybrown;
+        margin: 80px auto;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title_commentsWrap p{
+        text-align: center;
+    }
+    
+    
+    .contactBlock{
+        width:100%;
+        height: auto;
+        margin: 50px 0;
+        padding: 0 1rem;
+        justify-content: space-between;
+    }
+    .writeToUs{
+        width: 60%;
+        font-size: 1rem;
+        margin-left: 0;
+        text-align: center;
+        color: black;
+    }
+    .writeToUs p{
+        margin-bottom: .6rem;
+    }
+    .link_contact{
+        text-decoration: none;
+        color: #3498db;
+        font-size: 1rem;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 5px; 
+        cursor: pointer;
+    }
+    
+    .dogImgWrapp{
+        width: 35%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .dogImgWrapp img{
+        width: 100%;
+        height: 100%;
+    }
+    
+
+} 

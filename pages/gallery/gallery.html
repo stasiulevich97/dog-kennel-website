@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/imgs/logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fcf522b6c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+            </div>
+            <div class="header__logo-container">
+                <div class="header__logo">REAL TERRIER</div>
+            </div>
+            <div class="header__navigation-wrapper">
+                <nav class="header__navigation">
+                    <ul class="nav__items" id="nav__items">
+                        <li class="nav__item">
+                            <a href="../../index.html" class="nav__item-link">Главная страница</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../grooming/grooming.html" class="nav__item-link">Груминг</a>
+                        </li>
+                        <li class="nav__item">
+                            <a style="color: sandybrown;" href="gallery.html" class="nav__item-link">Галерея</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../puppies/puppies.html" class="nav__item-link">Щенки</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../form/index.html" class="nav__item-link">Свяжитесь с нами</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="popup" id="popup"></div>
+            </div>
+        </div>
+    </header>
+    <h1>Галерея</h1>
+    <div class="wrapper">
+        <div class="gallery">
+          <div class="image"><span><img src="./img/DSC_3554.jpg" alt="dogs"></span></div>
+          <div class="image"><span><img src="./img/DSC_3623.jpg" alt="dogs"></span></div>
+          <div class="image"><span><img src="./img/DSC_3645.jpg" alt="dogs"></span></div>
+          <div class="image"><span><img src="./img/DSC_3650.jpg" alt="dogs"></span></div>
+          <div class="image"><span><img src="./img/DSC_3664.jpg" alt="dogs"></span></div>
+          <div class="image"><span><img src="./img/DSC_3770.jpg" alt="dogs"></span></div>
+          <div class="image"><span><img src="./img/IMG_20220520_130235.jpg" alt="dogs"></span></div>
+          <div class="image"><span><img src="./img/IMG_20220520_130720.jpg" alt="dogs"></span></div>
+          <div class="image"><span><img src="./img/IMG_20220520_132115.jpg" alt="dogs"></span></div>
+        </div>
+      </div>
+
+      <div class="preview-box">
+        <div class="details">
+          <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+          <span class="icon fas fa-times"></span>
+        </div>
+        <div class="image-box">
+          <div class="slide prev"><i class="fa-solid fa-arrow-left"></i></div>
+          <div class="slide next"><i class="fa-solid fa-arrow-right"></i></div>
+          <img src="" alt="">
+        </div>
+      </div>
+      <div class="shadow"></div>
+    
+   
+
+    <footer class="footer">
+        <div class="socialMediaWrap">
+            <div class="footerP">
+                <p>Найдите нас в социальных сетях:</p>
+            </div>
+            
+            <div class="socialMedia">
+                <a href="https://instagram.com/olgatsiperman?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100028446330248"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@andrei_meloman?_t=8axsKVfIlbq"> <i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            
+        </div>
+    
+        <div class="contactInfo">
+            <p>Email : nasta.lubyana.97@gmail.com</p>
+            <p>Tel : +48 502 989 615</p>
+        </div>
+    
+        <div class="mapWrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.016634061797!2d23.095194331886802!3d53.14579601576755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc88b2c83865%3A0xe11da3b78008053b!2zSHVnb25hIEtvxYLFgsSFdGFqYSAzMiwgMTUtNzc0IEJpYcWCeXN0b2s!5e0!3m2!1suk!2spl!4v1678016125764!5m2!1suk!2spl" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+
+   
+
+    <script type="text/javascript">
+        let gallery  = document.querySelectorAll(".image")
+        let previewBox = document.querySelector(".preview-box")
+        let previewImg = previewBox.querySelector("img")
+        let closeIcon = previewBox.querySelector(".icon")
+        let currentImg = previewBox.querySelector(".current-img")
+        let totalImg = previewBox.querySelector(".total-img")
+        let shadow = document.querySelector(".shadow")
+
+        window.onload = ()=>{
+            for (let i = 0; i < gallery.length; i++) {
+                totalImg.textContent = gallery.length; //passing total img length to totalImg variable
+                let newIndex = i; //passing i value to newIndex variable
+                let clickedImgIndex; //creating new variable
+                
+                gallery[i].onclick = () =>{
+                    clickedImgIndex = i; //passing cliked image index to created variable (clickedImgIndex)
+                    function preview(){
+                        currentImg.textContent = newIndex + 1; //passing current img index to currentImg varible with adding +1
+                        let imageURL = gallery[newIndex].querySelector("img").src; //getting user clicked img url
+                        previewImg.src = imageURL; //passing user clicked img url in previewImg src
+                    }
+                    preview(); //calling above function
+            
+                    const prevBtn = document.querySelector(".prev");
+                    const nextBtn = document.querySelector(".next");
+                    if(newIndex == 0){ //if index value is equal to 0 then hide prevBtn
+                        prevBtn.style.display = "none"; 
+                    }
+                    if(newIndex >= gallery.length - 1){ //if index value is greater and equal to gallery length by -1 then hide nextBtn
+                        nextBtn.style.display = "none"; 
+                    }
+                    prevBtn.onclick = ()=>{ 
+                        newIndex--; //decrement index
+                        if(newIndex == 0){
+                            preview(); 
+                            prevBtn.style.display = "none"; 
+                        }else{
+                            preview();
+                            nextBtn.style.display = "block";
+                        } 
+                    }
+                    nextBtn.onclick = ()=>{ 
+                        newIndex++; //increment index
+                        if(newIndex >= gallery.length - 1){
+                            preview(); 
+                            nextBtn.style.display = "none";
+                        }else{
+                            preview(); 
+                            prevBtn.style.display = "block";
+                        }
+                    }
+                    document.querySelector("body").style.overflow = "hidden";
+                    previewBox.classList.add("show"); 
+                    shadow.style.display = "block"; 
+                    closeIcon.onclick = ()=>{
+                        newIndex = clickedImgIndex; //assigning user first clicked img index to newIndex
+                        prevBtn.style.display = "block"; 
+                        nextBtn.style.display = "block";
+                        previewBox.classList.remove("show");
+                        shadow.style.display = "none";
+                        document.querySelector("body").style.overflow = "scroll";
+                    }
+                }
+                
+            } 
+}
+
+    </script> 
+    <script src="../../burger.js"></script>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+body{
+    /* background-color:#f6f6f6; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+  main{
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px auto;
+  }
+  .thankDiv{
+    width: 40%;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+   }
+   .pawWrap{
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in 1000ms;
+   }
+   .toMainPage{
+    text-decoration: none;
+    color: sandybrown;
+    align-self: center;
+    text-align: center;
+    font-size: 1rem;
+    font-weight:600 ;
+    margin-right:10px;
+   }
+   .pawWrap:hover{
+    scale: 120%;
+   }
+   .pawPrint{
+    width: 1.5rem;
+    height: 1.5rem;
+   }
+
+   
+   
+   @media (min-width: 300px) and  (max-width: 767px) {
+    .thankDiv{
+      width:60%;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      
+     }
+    .toMainPage{
+      align-self: center;
+      text-align: center;
+      font-size: .8rem;
+      margin-right:10px auto;
+     }
+   
+   } 

@@ -1,0 +1,327 @@
+ 
+.contact__us-wrapper{
+    min-width: 1200px;
+    margin: 20px 0;
+    padding: 0 1rem;
+    
+}
+.boldSpan {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: normal;
+    padding-right:5px;
+    color: var(--light-orange-color);
+}
+hr{
+  margin-top: .7rem;
+}
+.infoContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.ownerInfoWrapp div{
+    margin: 15px 0;
+}
+.ownerInfoWrapp  p , label{
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+.ownerInfoWrapp div:first-child{
+    padding:0 0 40px 0;
+}
+.ownerInfoP{
+    width: 80%;
+    margin-top: 3rem;
+}
+.formWrapp{
+    width: 65%;
+    height:auto; 
+    padding-right: 1rem;
+}
+.inputWrapper{
+    display: flex;
+    justify-content:flex-end;
+    padding: 15px 0;
+}
+input , #userMessage{
+    width:350px ;
+    height: 20px;
+    outline: none;
+    margin-left: 1rem;
+}
+#userMessage{
+    min-height: 100px;
+}
+.errorP{
+    height: 20px;
+    border: 1px solid red;
+    color: red;
+    margin-left: 1rem;
+}
+.redInput{
+    border-color: red;
+}
+
+#todayDate + .validDate {
+    position: relative;
+  }
+  
+  #todayDate + .validDate::before {
+    position: absolute;
+    right: -20px;
+    top: 5px;
+  }
+  
+  #todayDate:invalid {
+    border: 2px solid red;
+  }
+  
+  #todayDate:invalid + .validDate::before {
+    content: "✖";
+    color: red;
+  }
+  
+  #todayDate:valid + .validDate::before {
+    content: "✓";
+    color: green;
+  }
+  .btnsDiv{
+    display: flex;
+    justify-content: flex-end;
+  }
+  #submitBtn, #deleteStorageBtn{
+    width: 6rem;
+    height: 2rem;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  #submitBtn:hover{
+    box-shadow: 0 0 50px 0 #3498db inset, 0 0 10px 3px #3498db;
+  }
+  #deleteStorageBtn:hover{
+    box-shadow: 0 0 50px 0 #3498db inset, 0 0 10px 3px #3498db;
+  }
+
+
+
+
+   @media (min-width: 992px) and (max-width: 1199px) {
+    .contact__us-wrapper{
+      min-width: 992px;
+      margin: 20px auto;
+    }
+    .inputWrapper{
+      justify-content:space-between;
+      padding: 15px 0;
+    }
+    input , #userMessage{
+        margin-left: 0;
+    }
+ 
+  }
+  
+   @media (min-width: 768px) and (max-width: 991px) {
+  .contact__us-wrapper{
+      min-width: 768px;
+  }
+  .boldSpan {
+      font-size: 20px;
+  }
+  .infoContainer{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .ownerInfoWrapp{
+    display: flex;
+    flex-direction:column ;
+
+  }
+  .ownerInfoWrapp div{
+    margin:  0;
+    display: flex;
+  }
+  .ownerInfoWrapp div:first-child{
+    padding:0 0 10px 0;
+  }
+  .ownerInfoWrapp  p{
+    margin-right: 1rem;
+  }
+  .ownerInfoWrapp  p , label{
+    font-size: 1rem;
+  }
+  .ownerInfoP{
+    margin-top: .7rem;
+  }
+  .formWrapp{
+    width: 70%;
+  }
+  .inputWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    padding: 15px 0;
+  }
+  .inputWrapper label{
+   padding-bottom: 10px;
+  }
+  input , #userMessage{
+    width:450px ;
+    height: 30px;
+    margin-left: 0;
+  }
+ 
+  .errorP{
+    width:450px ;
+    height: 30px;
+    margin-left:0;
+  }
+
+  .btnsDiv{
+    justify-content: flex-start;
+  }
+  #submitBtn, #deleteStorageBtn{
+    margin:10px 10px 0 0 ;
+  }
+
+  
+}
+  
+
+@media (min-width: 450px) and  (max-width: 767px) {
+  .contact__us-wrapper{
+      min-width: 300px;
+  }
+   
+  .boldSpan {
+      font-size: 1.2rem;
+  }
+  .infoContainer{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .ownerInfoWrapp{
+    display: flex;
+    flex-direction:column ;
+
+  }
+  .ownerInfoWrapp div{
+    margin:  0;
+    display: flex;
+    flex-direction:column ;
+  }
+  .ownerInfoWrapp div:first-child{
+    padding:0 0 10px 0;
+  }
+  .ownerInfoWrapp  p{
+    margin-right: 1rem;
+  }
+  .ownerInfoWrapp  p , label{
+    font-size: 1rem;
+  }
+  .ownerInfoP{
+    margin-top: .7rem;
+  }
+  .formWrapp{
+    width: 80%;
+  }
+  .inputWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    padding: 15px 0;
+  }
+  .inputWrapper label{
+   padding-bottom: 10px;
+  }
+  input ,.errorP , #userMessage{
+    width: 380px;
+    height: 30px;
+    margin-left: 0;
+  }
+  .btnsDiv{
+    justify-content: flex-start;
+  }
+  #submitBtn, #deleteStorageBtn{
+    margin:10px 10px 0 0 ;
+  }
+  
+ .validDate{
+   display: none;
+  }
+
+} 
+
+@media (min-width: 300px) and  (max-width: 450px) {
+  .contact__us-wrapper{
+    min-width: 300px;
+}
+ 
+.boldSpan {
+    font-size: 1.2rem;
+}
+.infoContainer{
+  display: flex;
+  flex-direction: column;
+
+}
+.ownerInfoWrapp{
+  display: flex;
+  flex-direction:column ;
+
+}
+.ownerInfoWrapp div{
+  margin:  0;
+  display: flex;
+  flex-direction:column ;
+}
+.ownerInfoWrapp div:first-child{
+  padding:0 0 10px 0;
+}
+.ownerInfoWrapp  p{
+  margin-right: 1rem;
+}
+.ownerInfoWrapp  p , label{
+  font-size: 1rem;
+}
+.ownerInfoP{
+  margin-top: .7rem;
+}
+.formWrapp{
+  width: 80%;
+}
+.inputWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  padding: 15px 0;
+}
+.inputWrapper label{
+ padding-bottom: 10px;
+}
+input ,.errorP , #userMessage{
+  width: 280px;
+  height: 30px;
+  margin-left: 0;
+}
+.btnsDiv{
+  justify-content: flex-start;
+}
+#submitBtn, #deleteStorageBtn{
+  margin:10px 10px 0 0 ;
+}
+
+.validDate{
+ display: none;
+}
+
+}
+
