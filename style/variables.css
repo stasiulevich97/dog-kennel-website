@@ -1,0 +1,26 @@
+:root{
+    /* colors */
+    --white-color:#FFF8E1;
+    --light-yellow-color:#FFCA28;
+    --light-orange-color:#FFA000;
+    --orange-color:#E65100;
+    --red-color: rgb(153, 33, 33);
+    --gray-color: #424242;
+    --black-color:black;
+
+    /* font size */
+    --sm-font-size:.5rem;
+    --md-font-size:1rem;
+    --lg-font-size:2rem;
+
+    /* margin */
+
+    --sm-margin:.5rem;
+    --md-margin:1.5rem;
+    --lg-margin:3rem;
+
+    /* padding */
+    --sm-margin:.5rem;
+    --md-margin:1.5rem;
+    --lg-margin:3rem;
+ }

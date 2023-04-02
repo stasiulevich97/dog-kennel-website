@@ -1,0 +1,964 @@
+
+.preloader{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: rgb(233, 230, 230);
+  z-index: 4;
+}
+.preloader__img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 200px;
+  width: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  background: url('../assets/imgs/preload.svg') no-repeat  50% 50%;
+  background-size: 200px;
+}
+.loaded .preloader{
+  display: none;
+}
+.mainpageImgWrapp{
+  width: 100%;
+  height: 700px;
+  margin-bottom: 2rem;
+}
+.mainImgDiv{
+  width: 100%;
+  height: 100%;
+}
+.mainImgDiv img{
+  width: 100%;
+  height: 100%;
+}
+.mainText{
+  position: absolute;
+  top:550px;
+  right: 0;
+  width: 40%;
+  text-align: center;
+  font-size: 1.6rem;
+  background: transparent;
+  z-index: 2;
+}
+.mainText p{
+ background: transparent;
+ color: black;
+}
+.mainText .mainTextBold{
+  font-weight: bold;
+  font-size: 3rem;
+ 
+}
+.aboutBreeder{
+  width: 100%;
+  height: auto;
+  padding: 20px 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 20px;
+  margin: 5rem 0;
+}
+.breederPhoto {
+  width:50%;
+}
+.breederPhoto img{
+  width: 100%;
+}
+.aboutBreederInfo{
+  width:50%;
+  padding: 2rem;
+}
+.aboutBreederInfo p:first-child{
+  margin-bottom: 1rem;
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-left: 4px solid sandybrown;
+  color: sandybrown;
+}
+
+.howToBuyBlock ,.benefitsBlock{
+  width: 100%;
+  height: 300px;
+  background-color: sandybrown;
+  margin: 5rem 0;
+  
+}
+
+.howToBuyBlockWrapp,.benefitsBlockWrapp{
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  height:60%;
+}
+.howToBuy__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: sandybrown;
+}
+.benefits__card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: sandybrown;
+}
+.howToBuy__card img{
+  background: transparent;
+  align-self: center;
+}
+.benefits__img img{
+  background: transparent;
+  align-self: center;
+}
+.howToBuyText ,.benefitsText{
+  background-color: sandybrown;
+  font-size: 1rem;
+  text-align: center;
+  width: 60%;
+}
+.howToBuy__img, .benefits__img{
+  background-color: sandybrown;
+}
+.howToBuy__arrow{
+  width: 10%;
+  height: 100%;
+  background-color: sandybrown;
+  display: flex;
+  align-items: center;
+
+}
+.howToBuy__arrow img{
+  background-color: sandybrown;  
+  align-items: center;
+}
+
+.howToBuyBlock p:first-child{
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: sandybrown;
+  color: black;
+  font-weight: 500;
+  padding: 20px 0;
+
+}
+.benefitsBlock p:first-child{
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: sandybrown;
+  color: black;
+  font-weight: 500;
+  padding: 20px 0;
+
+}
+
+.factsAboutBreedBlock{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    padding: 0 1rem;
+}
+.factsAboutBreed{
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+
+}
+.description__breed{
+  line-height:2rem;
+}
+.fact{
+  line-height:2rem;
+  font-weight: bold;
+}
+.factsAboutBreed__video{
+  width: 750px;
+  height: 600px;
+}
+.factsHeader{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.boldOrangeText{
+  color: sandybrown;
+}
+.boldGrayText{
+  color: gray;
+}
+
+.layout {
+  width: 100%;
+  height: auto;
+  padding: 0 1rem;
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.layout__header{
+  width: 100px;
+  margin: 20px auto;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  border-bottom: 4px solid sandybrown;
+}
+.first__fourQuestions, .second__fourQuestions{
+  width: 47%;
+  height: 100%;
+}
+.accordion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 3px solid sandybrown;
+  border-radius: 10px;
+  cursor: pointer;
+  min-height: 100px;
+}
+.first__fourQuestions .accordion:hover {
+  scale: 110%;
+  width: 90%;
+  margin-left: 3rem;
+}
+.second__fourQuestions .accordion:hover {
+  scale: 110%;
+  width: 90%;
+}
+.accordion__question{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.accordion__question p {
+  margin: 5px;
+  padding: 0;
+  font-size: 20px;
+}
+.accordion__answer p {
+  margin: 5px;
+  padding: 10px 5px;
+  font-size: large;
+  color: black;
+  border-radius: 10px;
+  background-color: rgb(255, 195, 143);
+}
+
+.accordion__answer {
+  display: none;
+}
+.accordion.active .accordion__answer {
+  display: block;
+}
+
+.translatorHeader{
+  width: 80%;
+  margin: 1rem auto;
+  text-align: center;
+  font-weight: 600;
+  color: sandybrown;
+  font-size: 1.3rem;
+}
+.translatorHeader::after{
+ content: "";
+ display: block;
+ margin:10px  auto;
+ width: 100%;
+ height: 2px;
+ background-color: sandybrown;
+}
+.translatorHeader::before{
+ content: "";
+ display: block;
+ margin:10px  auto;
+ width: 100%;
+ height: 2px;
+ background-color: sandybrown;
+}
+.translatorInstruction{
+  width: 60%;
+  margin: 1rem auto;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-weight: 600;
+  color: sandybrown;
+  font-size: .8rem;
+}
+
+#factsContainer{
+  width: 100%;
+  height: 400px;
+  margin-top: 2rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.translateWrapp{
+  width: 47%;
+  height: 100%;
+ 
+}
+.inputWrapp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#translateInput{
+  width: 70%;
+  height: 2rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #3498db;;
+}
+#sendBtn{
+  width: 7rem;
+  height: 2rem;
+  cursor: pointer;
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset;
+  text-align: center;
+  transition: all 250ms ease-in-out;
+}
+#sendBtn:hover{
+  box-shadow: 0 0 50px 0 #3498db inset, 0 0 10px 3px #3498db;
+}
+.translatedTextWrap{
+  width: 100%;
+  height: 70%;
+}
+.translatedTextWrap textarea{
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.randomFactWrap{
+  width: 50%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#randomfact{
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 2px solid sandybrown;
+  border-top: 2px solid sandybrown;
+}
+
+
+
+  
+ 
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .aboutBreeder{
+    font-size: 1rem;
+    line-height: 16px;
+    margin: 4rem 0;
+    justify-content: space-between;
+  }
+  .aboutBreederInfo{
+    padding: 0;
+    text-align: justify;
+  }
+  .breederPhoto {
+    width:45%;
+    height: 100%;
+  }
+  .breederPhoto img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutBreederInfo p:first-child{
+    font-size: 1.5rem;
+  }
+
+  .factsAboutBreedBlock{
+    height: 500px;
+  }
+
+  .description__breed{
+    line-height:1.1rem;
+  }
+
+  .factsAboutBreed__video{
+    width:550px;
+    height: 500px;
+  }
+  .factsHeader{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .howToBuyBlock{
+    justify-content: space-between;
+    height: 250px;
+  }
+  .howToBuyBlockWrapp{
+  margin: 1rem;
+  padding: 0;
+  }
+  .howToBuy__card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: sandybrown;
+  }
+  .howToBuy__card img{
+    background: transparent;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+  }
+ 
+  .howToBuyText {
+    width: 100%;
+    text-align:center;
+  }
+
+  .howToBuy__arrow{
+    width: 50px;
+  
+  }
+  .howToBuy__arrow img{
+    width: 50px;
+  }
+  
+
+  
+}
+
+ @media (min-width: 768px) and (max-width: 991px) {
+
+  .aboutBreeder{
+    font-size: 1rem;
+    line-height: 16px;
+    margin: 4rem 0;
+    justify-content: space-between;
+  }
+  .aboutBreederInfo{
+    padding: 0;
+    text-align: justify;
+  }
+  .breederPhoto {
+    width:45%;
+    height: 370px;
+  }
+  .breederPhoto img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .factsAboutBreedBlock{
+    height:auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description__breed{
+    line-height:1.1rem;
+    text-align: center;
+  }
+
+  .factsAboutBreed__video{
+    width:700px;
+    height: auto;
+
+  }
+  .factsHeader{
+    text-align: center;
+    font-size: 1.3rem;
+    width: 400px;
+    margin: 10px auto;
+  }
+  .factsAboutBreed{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  
+  }
+ 
+  .fact{
+    line-height:1.5rem;
+  }
+
+  .howToBuyBlock, .benefitsBlock{
+    justify-content: space-between;
+    height: 250px;
+  }
+  .howToBuyBlockWrapp, .benefitsBlockWrapp{
+    margin:1rem 0;
+  }
+  .howToBuy__card ,.benefits__card{
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: sandybrown;
+   
+  }
+  .howToBuy__card img{
+    width: 70px;
+    height: 70px;
+  }
+  .benefits__img img{
+    width: 70px;
+    height: 70px;
+  }
+ 
+  .howToBuyText, .benefitsText {
+    width: 100%;
+    text-align:center;
+  }
+
+  .howToBuy__arrow{
+    width: 50px;
+  
+  }
+  .howToBuy__arrow img{
+    width: 50px;
+  }
+
+  .howToBuy__card img{
+    background: transparent;
+    align-self: center;
+  }
+  .benefits__img img{
+    background: transparent;
+    align-self: center;
+  }
+
+}
+
+
+@media (min-width: 450px) and  (max-width: 767px) {
+  .mainpageImgWrapp{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 2rem;
+  }
+  .mainImgDiv{
+    width: 100%;
+    height: 100%;
+  }
+  .mainImgDiv img{
+    width: 100%;
+    height: 100%;
+  }
+  .mainText{
+    top:390px;
+    width: 40%;
+    font-size: 1rem;
+
+  }
+
+  .mainText .mainTextBold{
+    font-size: 1.5rem;
+   
+  }
+  .aboutBreeder{
+    font-size: 1rem;
+    line-height: 16px;
+    margin: 3rem 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: auto;
+  }
+  .aboutBreederInfo p:first-child{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .aboutBreederInfo{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    text-align: justify;
+  }
+  .breederPhoto {
+    width:100%;
+    height: 400px;
+    margin-bottom: 2rem;
+  }
+  .breederPhoto img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .factsAboutBreedBlock{
+    height:auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description__breed{
+    line-height:1.1rem;
+    text-align: center;
+  }
+
+  .factsAboutBreed__video{
+    width:450px;
+    height: auto;
+
+  }
+  .factsHeader{
+    text-align: center;
+    font-size: 1.3rem;
+    width: 400px;
+    margin: 10px auto;
+  }
+  .factsAboutBreed{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  
+  }
+ 
+  .fact{
+    line-height:1.5rem;
+  }
+
+  .howToBuyBlock, .benefitsBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+  .howToBuyBlockWrapp, .benefitsBlockWrapp{
+    display: flex;
+    flex-direction: column;
+    margin:1rem ;
+  }
+  .howToBuy__card ,.benefits__card{
+    height: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: sandybrown;
+   
+  }
+  .howToBuy__card img{
+    width: 70px;
+    height: 70px;
+  }
+  .benefits__img img{
+    width: 70px;
+    height: 70px;
+  }
+ 
+  .howToBuyText, .benefitsText {
+    width: 100%;
+    text-align:center;
+  }
+
+  .howToBuy__arrow{
+    width: 100%;
+  }
+  .howToBuy__arrow img{
+    width: 50px;
+    margin-left: 47%;
+    align-self: center;
+    transform: rotate(90deg);
+  }
+
+  .howToBuy__card img{
+    background: transparent;
+    align-self: center;
+  }
+  .benefits__img img{
+    background: transparent;
+    align-self: center;
+  }
+
+  .layout {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first__fourQuestions, .second__fourQuestions{
+    width: 100%;
+    height: 100%;
+  }
+
+  .first__fourQuestions .accordion:hover {
+    scale:100%;
+    width: 100%;
+    margin-left: 0;
+  }
+  .second__fourQuestions .accordion:hover {
+    scale:100%;
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  #factsContainer{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .translateWrapp{
+    width: 100%;
+    height: 100%;
+  }
+  #outBlock{
+    min-height: 250px;
+  }
+  .translatedTextWrap{
+    width: 100%;
+    min-height: 250px;
+
+  }
+
+  .randomFactWrap{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 4rem;
+  }
+
+
+} 
+
+
+
+@media (min-width: 300px) and  (max-width: 450px) {
+
+  .mainpageImgWrapp{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 2rem;
+  }
+  .mainImgDiv{
+    width: 100%;
+    height: 100%;
+  }
+  .mainImgDiv img{
+    width: 100%;
+    height: 100%;
+  }
+  .mainText{
+    top:330px;
+    width: 45%;
+    font-size: 1rem;
+
+  }
+
+  .mainText .mainTextBold{
+    font-size: 1.1rem;
+   
+  }
+  .aboutBreeder{
+    font-size: 1rem;
+    line-height: 16px;
+    margin: 3rem 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: auto;
+  }
+  .aboutBreederInfo p:first-child{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .aboutBreederInfo{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    text-align: justify;
+  }
+  .breederPhoto {
+    width:100%;
+    height: 300px;
+    margin-bottom: 2rem;
+  }
+  .breederPhoto img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .factsAboutBreedBlock{
+    height:auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .description__breed{
+    line-height:1.1rem;
+    text-align: center;
+  }
+  
+  .factsAboutBreed__video{
+    width:300px;
+    height: auto;
+  
+  }
+  .factsHeader{
+    text-align: center;
+    font-size: 1.3rem;
+    width: 250px;
+    margin: 10px auto;
+  }
+  .factsAboutBreed{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  .fact{
+    line-height:1.5rem;
+  }
+
+  .howToBuyBlock, .benefitsBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+  .howToBuyBlockWrapp, .benefitsBlockWrapp{
+    display: flex;
+    flex-direction: column;
+    margin:1rem ;
+  }
+  .howToBuy__card ,.benefits__card{
+    height: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: sandybrown;
+   
+  }
+  .howToBuy__card img{
+    width: 70px;
+    height: 70px;
+  }
+  .benefits__img img{
+    width: 70px;
+    height: 70px;
+  }
+ 
+  .howToBuyText, .benefitsText {
+    width: 100%;
+    text-align:center;
+  }
+
+  .howToBuy__arrow{
+    width: 100%;
+  }
+  .howToBuy__arrow img{
+    width: 50px;
+    margin-left: 43%;
+    align-self: center;
+    transform: rotate(90deg);
+  }
+
+  .howToBuy__card img{
+    background: transparent;
+    align-self: center;
+  }
+  .benefits__img img{
+    background: transparent;
+    align-self: center;
+  }
+
+  .layout {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first__fourQuestions, .second__fourQuestions{
+    width: 100%;
+    height: 100%;
+  }
+
+  .first__fourQuestions .accordion:hover {
+    scale:100%;
+    width: 100%;
+    margin-left: 0;
+  }
+  .second__fourQuestions .accordion:hover {
+    scale:100%;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #factsContainer{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .translateWrapp{
+    width: 100%;
+    height: 100%;
+  }
+  #outBlock{
+    min-height: 250px;
+  }
+  .translatedTextWrap{
+    width: 100%;
+    min-height: 250px;
+
+  }
+
+  .randomFactWrap{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 4rem;
+  }
+}
