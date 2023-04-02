@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/404/404.css">
+   
     <link rel="shortcut icon" href="/assets/imgs/logo.jpg" type="image/x-icon">
     <title>404 page</title>
+    <style>
+        
+body{
+    background-color:navajowhite;
+    height: auto;   
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: navajowhite;
+}
+.wrapper img{
+    width: 450px;
+    height: 250px;
+    background-color: navajowhite;
+}
+.errorNumb{
+    font-weight: 400;
+    font-size: 75px;
+    color: gray;
+    margin: 1rem;
+    text-align: center;
+    background-color:navajowhite;
+}
+.text1, .text2{
+    width: 100%;
+    color: gray;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color:navajowhite;
+}
+
+.text1{
+    margin-bottom: 2rem;
+}
+
+.text2 a{
+    font-weight: 800;
+    cursor: pointer;
+    color: gray;
+    background-color:navajowhite;
+}
+
+@media (min-width: 300px) and  (max-width: 767px) {
+    .wrapper img{
+        width: 280px;
+        height: 250px;
+    }
+
+} 
+    </style>
 </head>
 <body>
     <header class="header">
@@ -26,19 +81,19 @@
                 <nav class="header__navigation">
                     <ul class="nav__items" id="nav__items">
                         <li class="nav__item">
-                            <a href="./index.html" class="nav__item-link">Главная страница</a>
+                            <a href="/index.html" class="nav__item-link">Главная страница</a>
                         </li>
                         <li class="nav__item">
-                            <a href="pages/grooming/grooming.html" class="nav__item-link">Груминг</a>
+                            <a href="/pages/grooming/grooming.html" class="nav__item-link">Груминг</a>
                         </li>
                         <li class="nav__item">
-                            <a href="pages/gallery/gallery.html" class="nav__item-link">Галерея</a>
+                            <a href="/pages/gallery/gallery.html" class="nav__item-link">Галерея</a>
                         </li>
                         <li class="nav__item">
-                            <a href="pages/puppies/puppies.html" class="nav__item-link">Щенки</a>
+                            <a href="/pages/puppies/puppies.html" class="nav__item-link">Щенки</a>
                         </li>
                         <li class="nav__item">
-                            <a href="pages/form/index.html" class="nav__item-link">Свяжитесь с нами</a>
+                            <a href="/pages/form/index.html" class="nav__item-link">Свяжитесь с нами</a>
                         </li>
                     </ul>
                 </nav>
@@ -47,7 +102,7 @@
         </div>
     </header>
     <div class="wrapper">
-        <img src="./404/png-transparent-puppy-face-jack-russell-terrier-sad-puppy-mammal-face-carnivoran.png" alt="">
+        <img src="/404/png-transparent-puppy-face-jack-russell-terrier-sad-puppy-mammal-face-carnivoran.png" alt="">
         <div class="errorNumb">404</div>
         <div class="text1">
             Ой! Вы не должны были найти плачущую собачку.</div>
@@ -78,6 +133,6 @@
         </div>
     </footer>
 
-    <script src="../burger.js"></script>
+    <script src="/burger.js"></script>
 </body>
 </html>
