@@ -210,12 +210,12 @@
             </div>
 
             <div id="addComment" >
-                <form onsubmit="return checkComment()" >
+                  <div>
                     <label for="name">Имя: <input type="text" name="userName" id="name"></label>
                     <label for="comment">Отзыв:</label>
                     <textarea name="comment" id="comment" cols="80" rows="8"></textarea>
-                    <button type="submit" name="button" class="sendReviewBtn">Отправить отзыв</button> 
-                </form>
+                    <button type="button" onclick="return checkComment()" name="button" class="sendReviewBtn">Отправить отзыв</button> 
+                </div>
                 
             </div>
         </div>
