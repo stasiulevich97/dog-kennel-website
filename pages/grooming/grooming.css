@@ -213,7 +213,7 @@
     font-size: 1rem;
     
 }
-#addComment form{
+#addComment div{
     width:100%;
     min-height:100%;
     display: flex;
@@ -227,7 +227,7 @@
  margin-top: 10px;
 }
 
-#addComment form label:first-child{
+#addComment div label:first-child{
     margin-bottom:10px ;
 }
 #addComment button{
